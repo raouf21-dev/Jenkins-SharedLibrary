@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def buildPushDocker(){
+def call(){
     echo "Building the image..."
     withCredentials([usernamePassword(credentialsId: "docker-hub-creds", usernameVariable: 'USER', passwordVariable: 'PWD')]) {
         sh "docker build -t santana20095/node-app:${IMAGE_NAME} ."

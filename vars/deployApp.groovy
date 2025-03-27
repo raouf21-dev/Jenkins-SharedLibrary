@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
-def deployApp(){
+def call(){
     echo "Deploying image..."
 }

@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def checkCommiter(){
+def call(){
     def committer = sh(script: "git log -1 --pretty=format:'%ae'", returnStdout: true).trim()
     def ignoredUsers = "jenkins@example.com"
 

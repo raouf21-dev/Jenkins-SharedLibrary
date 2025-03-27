@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def testApp(){
+def call(){
     dir('app'){
         sh "npm install"
         sh "npm run test"

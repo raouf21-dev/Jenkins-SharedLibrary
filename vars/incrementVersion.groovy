@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def incrementVersion(){
+def call(){
     dir("app") {
     // update application version in the package.json file with one of these release types: patch, minor or major
     // This command updates the minor version in package.json and ensures no Git commands are executed in the background, preventing automatic commits or tags in your Jenkins Pipeline
