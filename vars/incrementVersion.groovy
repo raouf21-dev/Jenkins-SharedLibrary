@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 def incrementVersion(){
     dir("app") {
     // update application version in the package.json file with one of these release types: patch, minor or major

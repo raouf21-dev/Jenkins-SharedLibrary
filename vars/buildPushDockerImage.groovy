@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 def buildPushDocker(){
     echo "Building the image..."
     withCredentials([usernamePassword(credentialsId: "docker-hub-creds", usernameVariable: 'USER', passwordVariable: 'PWD')]) {

@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 def commitVersionUpdate(){
     withCredentials([usernamePassword(credentialsId: "git-creds", usernameVariable: 'USER', passwordVariable: 'PWD') ]){
         sh "git config --global user.email jenkins@example.com"
